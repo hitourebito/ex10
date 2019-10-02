@@ -15,3 +15,15 @@
     }
   }
 ?>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ex10_01.php</title>
+<style>
+</style>
+</head>
+<body>
+</body>
+</html>
