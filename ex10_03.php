@@ -1,4 +1,23 @@
+<?php
+/*----------------------------
+	演習10-3 Author:Ishii
+ -----------------------------*/
+	$errmsg = array();			// エラーメッセージ 
 
+	// クッキー取得：訪問回数			
+	if(isset($_COOKIE["ex10_03"]["count"]))
+	{
+		// 訪問回数：カウントアップ			
+		$count = $_COOKIE["ex10_03"]["count"] + 1;
+	}
+	else
+	{
+		// 訪問回数：初期値			
+		$count = 1;
+	}
+	// クッキ保存：訪問回数
+	setcookie('ex10_03[count]', $count, time() + 30 * 24 * 60 * 60);
+?>
 
 <!DOCTYPE html>
 <html lang="ja">
