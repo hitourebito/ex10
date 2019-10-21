@@ -25,5 +25,21 @@
 </style>
 </head>
 <body>
+  <h1>クッキー保存</h1>
+  <div id="err">
+<?php
+    // エラーメッセージ表示
+    foreach($errmsg as $val)
+    {
+      echo $val, "<br />";
+    }
+?>
+<?php
+    if(!count($errmsg))
+    {
+      echo "ニックネームを保存しました";
+    }
+?>
+  </div>
 </body>
 </html>
